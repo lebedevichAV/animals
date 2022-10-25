@@ -1,2 +1,3 @@
-mixin image(className, name)
+mixin picture(className, name)
+    picture(class=className srcset=require(`@/assets/images/${name}`) media="(min-width: 630px)" )
     img(class=className src=require(`@/assets/images/${name}`) alt=name)
