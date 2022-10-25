@@ -28,4 +28,12 @@
       }
     }
   }
+  &__link_active {
+    color: $brand-color;
+    &:link,
+    &:visited,
+    &:hover {
+      color: $brand-color;
+    }
+  }
 }
