@@ -57,3 +57,28 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.button {
+  // font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: $light-color;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 6.0625em;
+  border-radius: 1.5625em;
+  border: none;
+  outline: none;
+  background: $brand-gradient;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient($brand-color 0%, $brand-color 100%);
+  }
+  &:active {
+    background: linear-gradient($active-color 0%, $active-color 100%);
+  }
+  &_disabled {
+    background: linear-gradient($darker-main-gray 0%, $darker-main-gray 100%);
+  }
+}
