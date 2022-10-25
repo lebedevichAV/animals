@@ -1,0 +1,38 @@
+{
+  "menu": [
+    "About",
+    "Map",
+    "Zoos",
+    "Donate",
+    "Contact us",
+    "Designed by &#169;"
+  ],
+  "callToAction": "Watch your favorite animal online",
+  "btns": [
+    "Watch online",
+    "Choose your favorite",
+    "Feed a friend nowLeave feedback",
+    "Donate for volunteers",
+    "Submit"
+  ],
+  "twoColumnModule": {
+    "title": "The Backstage of the Wilderness World.",
+    "firstPrt": "The site was founded on the basis of a volunteer movement to protect and care for animals.",
+    "subtitle": "How it works",
+    "secondPrt": "The main goal to help the animals? as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles? alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles."
+  },
+  "mainDescription": {
+    "title": "Pick and feed a friend",
+    "description": "We know the animals bring you joy, and in these extraordinary times, we're glad.",
+    "firstPrt": "During a time when the COVID-19 epidemic is touching all of our lives, we-re proud and glad that people around the world find joy in PetStory.",
+    "secondPrt": "Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our Emergency Support Fund.",
+    "subtitle": "How it works",
+    "scheme": [
+      "Pay with card",
+      "Payment goes to the zoo",
+      "Your favorite animal gets delicious dish"
+    ],
+    "socialNetworks": ["Facebook", "Twitter", "Instagram", "YouTube"],
+    "copywriting": "designed by Alisa Samborskaya @RSSchool&#38;&#169;Yem Digital 2021"
+  }
+}
