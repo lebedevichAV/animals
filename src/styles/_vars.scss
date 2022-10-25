@@ -1,0 +1,74 @@
+//Fonts variables:
+$font-family: "Roboto", sans-serif;
+
+//Color variables:
+$black-blue: hsl(206, 12%, 23%);
+$gray: hsl(0, 1%, 46%);
+$gray-smoky: hsl(0, 0%, 67%);
+$light-gray: hsl(150, 8%, 95%);
+$frosted-glass-white: hsla(240, 100%, 100%, 0.52);
+$green: hsl(89, 100%, 29%);
+$red: hsl(0, 83%, 45%);
+$orange: hsl(29, 93%, 46%);
+$yellow: hsl(55, 100%, 59%);
+
+//Gradient variables:
+$bright-orange-gradient: linear-gradient(
+  113.96deg,
+  hsl(18, 94%, 64%) 1.49%,
+  hsl(32, 99%, 54%) 101.44%
+);
+$orange-gradient: linear-gradient(
+    315.75deg,
+    hsla(41, 99%, 72%, 0.7) 30.06%,
+    hsl(13, 98%, 83%) 100.95%,
+    hsla(41, 99%, 72%, 0.7) 106.36%
+  ),
+  linear-gradient(
+    315.75deg,
+    hsla(13, 98%, 83%, 0.74) 30.06%,
+    hsla(296, 85%, 82%, 0.66) 50.74%,
+    hsl(260, 44%, 89%) 80.49%,
+    hsl(201, 91%, 96%) 127.9%,
+    hsl(201, 91%, 96%) 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    hsla(13, 98%, 83%, 0.74) 30.06%,
+    hsla(296, 85%, 82%, 0.66) 50.74%,
+    hsl(260, 44%, 89%) 80.49%,
+    hsl(201, 91%, 96%) 127.9%,
+    hsl(201, 91%, 96%) 149.54%
+  );
+$pink-gradient: linear-gradient(
+    315.75deg,
+    hsla(13, 98%, 83%, 0.74) 30.06%,
+    hsla(296, 85%, 82%, 0.66) 50.74%,
+    hsl(260, 44%, 89%) 80.49%,
+    hsl(201, 91%, 96%) 127.9%,
+    hsl(201, 91%, 96%) 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    hsla(13, 98%, 83%, 0.74) 30.06%,
+    hsla(296, 85%, 82%, 0.66) 50.74%,
+    hsl(260, 44%, 89%) 80.49%,
+    hsl(201, 91%, 96%) 127.9%,
+    hsl(201, 91%, 96%) 149.54%
+  );
+
+//Project color variables:
+$the-darkest-color: $black-blue;
+$darker-main-gray: $gray;
+$main-gray: $gray-smoky;
+$lighter-main-gray: $light-gray;
+$the-lightest-color: $frosted-glass-white;
+$active-color: $green;
+$error-color: $red;
+$brand-color: $orange;
+$emphasis-color: $yellow;
+
+//Project gradient variables:
+$brand-gradient: $bright-orange-gradient;
+$primary-gradient: $orange-gradient;
+$secondary-gradient: $pink-gradient;

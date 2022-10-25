@@ -1,0 +1,12 @@
+include pug/libs/_libs
+
+doctype html
+include pug/_head
+.wrapper
+  header.header 
+    .container
+      .header__inner
+        h1.logo
+          +image('logo__img', 'logo-mob')
+        include pug/_nav.pug
+
