@@ -47,6 +47,19 @@ a {
 
 .main {
   flex: 1 0 auto;
+  background-image: url("@assets/images/giant-panda.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-width: 630px) {
+    background-image: url("@assets/images/giant-panda-small.jpg");
+  }
+  @media (min-width: 970px) {
+    background-image: url("@assets/images/giant-panda-medium.jpg");
+  }
+  @media (min-width: 1690px) {
+    background-image: url("@assets/images/giant-panda-big.jpg");
+  }
 }
 .footer {
   flex: 0 0 auto;
