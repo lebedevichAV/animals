@@ -15,7 +15,13 @@ body {
 }
 
 .header {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
+  background-color: $dark-color;
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin: 0.875em 0;
+  }
 }
 
 .main {

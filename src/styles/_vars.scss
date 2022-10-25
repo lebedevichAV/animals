@@ -11,6 +11,7 @@ $green: hsl(89, 100%, 29%);
 $red: hsl(0, 83%, 45%);
 $orange: hsl(29, 93%, 46%);
 $yellow: hsl(55, 100%, 59%);
+$black: hsl(0, 0%, 0%);
 
 //Gradient variables:
 $bright-orange-gradient: linear-gradient(
@@ -58,15 +59,16 @@ $pink-gradient: linear-gradient(
   );
 
 //Project color variables:
-$the-darkest-color: $black-blue;
+$the-darkest-gray: $black-blue;
 $darker-main-gray: $gray;
 $main-gray: $gray-smoky;
 $lighter-main-gray: $light-gray;
-$the-lightest-color: $frosted-glass-white;
+$the-lightest-gray: $frosted-glass-white;
 $active-color: $green;
 $error-color: $red;
 $brand-color: $orange;
 $emphasis-color: $yellow;
+$dark-color: $black;
 
 //Project gradient variables:
 $brand-gradient: $bright-orange-gradient;

@@ -3,3 +3,23 @@
 @import "fonts.scss";
 @import "vars.scss";
 @import "global.scss";
+
+.logo {
+  flex: 0 0 auto;
+  + nav {
+    margin-left: 3.9375em;
+  }
+}
+
+.nav {
+  flex: 1 0 auto;
+  &__list {
+    display: flex;
+    > li + li {
+      margin-left: 3.625em;
+    }
+    > .right-item {
+      margin-left: auto;
+    }
+  }
+}
