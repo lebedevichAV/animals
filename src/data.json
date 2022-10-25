@@ -1,4 +1,5 @@
 {
+  "pagesAdress": ["/", "/map", "/zoos", "/donate", "/contacts"],
   "menu": [
     "About",
     "Map",

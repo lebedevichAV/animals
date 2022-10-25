@@ -9,6 +9,26 @@ body {
   font-family: $font-family;
 }
 
+a {
+  color: $light-color;
+  transition: all ease-in 0.5s;
+  &:link {
+    color: $light-color;
+  }
+  &:visited {
+    color: $light-color;
+  }
+  &:hover {
+    background: $brand-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $brand-color;
+  }
+  &:active {
+    color: $light-color;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

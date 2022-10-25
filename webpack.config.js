@@ -82,14 +82,7 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    extensions: [
-      ".js",
-      ".json",
-      ".png",
-      ".sass",
-      ".scss",
-      ".pug",
-    ],
+    extensions: [".js", ".json", ".png", ".sass", ".scss", ".pug"],
     alias: {
       "@pug": path.resolve(__dirname, "src/pug"),
       "@": path.resolve(__dirname, "src"),
