@@ -1,0 +1,6 @@
+mixin nav(array, page)
+    nav.nav
+        ul.nav__list
+            each val, key in array
+                li
+                    a(class= key===page && ["nav__link_active"] href=val)= key

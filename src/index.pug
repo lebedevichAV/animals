@@ -1,5 +1,7 @@
 include pug/libs/_libs
 
+- let array={"About": "/","Map": "/map","Zoos": "/zoos","Donate": "/donate","Contact us": "/contacts","Designed by": "/"};
+
 doctype html
 include pug/_head
 .wrapper
@@ -9,7 +11,7 @@ include pug/_head
         h1.logo
           a(href="/")
             +picture('logo__img', 'logo')
-        include pug/_nav.pug
+        +nav(array, "About")
   main.main
   footer.footer
 

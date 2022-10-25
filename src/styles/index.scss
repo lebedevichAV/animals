@@ -21,8 +21,11 @@
     > li + li {
       margin-left: 3.625em;
     }
-    > .right-item {
+    :last-child {
       margin-left: auto;
+      > a::after {
+        content: " \00A9";
+      }
     }
   }
 }
