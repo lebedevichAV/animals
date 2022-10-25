@@ -60,4 +60,37 @@
   @media (min-width: 1690px) {
     background-image: url("@assets/images/giant-panda-big.jpg");
   }
+  &__inner {
+    padding: 5.375rem 0 6.25rem;
+  }
+}
+
+.catchy-title {
+  max-width: 500px;
+  margin-left: auto;
+  margin-bottom: 0.56em;
+  font-size: 6.6563em;
+  font-weight: 700;
+  line-height: 0.75em;
+  text-transform: uppercase;
+  color: $light-color;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 39vw;
+    max-width: 29rem;
+    height: 39vw;
+    max-height: 29rem;
+    border-radius: 50%;
+    background: $brand-gradient;
+    top: -21%;
+    left: -16%;
+    z-index: -10;
+  }
+  span {
+    color: $emphasis-color;
+  }
 }
