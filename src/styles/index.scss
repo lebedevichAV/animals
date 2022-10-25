@@ -29,10 +29,16 @@
     }
   }
   &__link_active {
+    background: $brand-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: $brand-color;
     &:link,
     &:visited,
     &:hover {
+      background: $brand-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       color: $brand-color;
     }
   }
