@@ -86,6 +86,7 @@ module.exports = {
     alias: {
       "@pug": path.resolve(__dirname, "src/pug"),
       "@": path.resolve(__dirname, "src"),
+      "@assets": path.resolve(__dirname, "src/assets"),
     },
   },
   optimization: optimization(),
