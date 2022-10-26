@@ -10,7 +10,7 @@ include pug/_head
       .header__inner
         h1.logo PetStory Online
           a(href="/")
-            +picture('logo__img', 'logo')
+            +picture("logo__img", "logo", "png")
         +nav(links, "About")
   main.main
     section.lending
@@ -20,6 +20,8 @@ include pug/_head
           button.button.lending__button Watch online
     section.project-description
       .hiw-description
-
+        .container
+          .hiw-description__inner
+            +picture("hiw-description__img", "human-photo", "jpg")
   footer.footer
 
