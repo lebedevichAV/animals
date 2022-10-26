@@ -100,3 +100,25 @@
     color: $emphasis-color;
   }
 }
+
+.project-description {
+  background: url("@assets/images/flower-01.png") top right no-repeat,
+    url("@assets/images/flower-02.png") bottom left no-repeat,
+    url("@assets/images/flower-03.png") bottom right no-repeat;
+  padding: 8.75rem 0 6.25rem;
+  @media (min-width: 630px) {
+    background: url("@assets/images/flower-01-small.png") top right no-repeat,
+      url("@assets/images/flower-02-small.png") bottom left no-repeat,
+      url("@assets/images/flower-03-small.png") bottom right no-repeat;
+  }
+  @media (min-width: 970px) {
+    background: url("@assets/images/flower-01-medium.png") top right no-repeat,
+      url("@assets/images/flower-02-medium.png") bottom left no-repeat,
+      url("@assets/images/flower-03-small.png") bottom right no-repeat;
+  }
+  @media (min-width: 1690px) {
+    background: url("@assets/images/flower-01-big.png") top right no-repeat,
+      url("@assets/images/flower-02-big.png") bottom left no-repeat,
+      url("@assets/images/flower-03-small.png") bottom right no-repeat;
+  }
+}

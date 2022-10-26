@@ -1,6 +1,6 @@
 include pug/libs/_libs
 
-- let array={"About": "/","Map": "/map","Zoos": "/zoos","Donate": "/donate","Contact us": "/contacts","Designed by": "https://www.figma.com/"};
+- let links={"About": "/","Map": "/map","Zoos": "/zoos","Donate": "/donate","Contact us": "/contacts","Designed by": "https://www.figma.com/"};
 
 doctype html
 include pug/_head
@@ -11,12 +11,15 @@ include pug/_head
         h1.logo PetStory Online
           a(href="/")
             +picture('logo__img', 'logo')
-        +nav(array, "About")
+        +nav(links, "About")
   main.main
     section.lending
       .container
         .lending__inner
           h2.catchy-title Watch your <span>favorite</span> animal online
           button.button.lending__button Watch online
+    section.project-description
+      .hiw-description
+
   footer.footer
 
