@@ -1,16 +1,12 @@
 mixin slide(className, slide)
-    .swiper-slide(class=className)
-        .container
-            div(class=`${className}__inner`)
-                each card in slide
-                    .card
-                        -
-                            let img = card.img, 
-                                title = card.title, 
-                                description = card.description, 
-                                icon = card.icon;
-                        img(src=require(`@assets/images/${img}`) alt="animal")
-                        h6.title.title_6= title
-                        p= description
-                        a(href="/")
-                            img(src=require(`@assets/icons/${icon}`) alt="icon")
+    div(class=className)
+        -
+            let img = slide.img, 
+                title = slide.title, 
+                description = slide.description, 
+                icon = slide.icon;
+        img(src=require(`@assets/images/${img}`) alt="animal")
+        h6.title.title_6= title
+        p= description
+        a(href="/")
+            img(src=require(`@assets/icons/${icon}`) alt="icon")

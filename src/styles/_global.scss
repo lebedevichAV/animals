@@ -104,5 +104,16 @@ a {
 }
 
 .slider {
-  width: 100%;
+  > .swiper-wrapper {
+    max-width: 1190px;
+    padding: 0 91px;
+    margin: 0 auto;
+  }
 }
+
+// .slide__inner {
+//   grid-template-columns: repeat(auto-fit, minmax(285, 24px, 1fr));
+//   grid-auto-rows: 1fr;
+//   column-gap: 1.875rem;
+//   row-gap: 1.25rem;
+// }
