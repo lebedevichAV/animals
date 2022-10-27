@@ -1,0 +1,15 @@
+mixin slide(className, images)
+    div(class= ".swiper-slide " + className)
+        .container
+            div(class= className + "__inner")
+                each val in images
+                    -
+                        let img = val.img;
+                        let title = val.title;
+                        let description = val.description;
+                        let icon = val.icon;
+                    img(src=require(`@assets/images/${img}`) alt="animal")
+                    h6= title
+                    p= description
+                    a(href="/") 
+                        img(src=require(`@assets/icons/${icon}`) alt="icon")
