@@ -9,7 +9,7 @@ mixin slide(className, images)
                         let description = val.description;
                         let icon = val.icon;
                     img(src=require(`@assets/images/${img}`) alt="animal")
-                    h6= title
+                    h6.title.title_6= title
                     p= description
                     a(href="/") 
                         img(src=require(`@assets/icons/${icon}`) alt="icon")

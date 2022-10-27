@@ -87,6 +87,7 @@ a {
 }
 
 .title {
+  color: inherit;
   font-weight: 400;
   line-height: 120%;
   &_2 {
@@ -95,8 +96,14 @@ a {
   &_4 {
     font-size: 1.5rem;
   }
+  &_6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
 }
 
 .slider {
   width: 100%;
+  font-size: 0.9375em;
 }
