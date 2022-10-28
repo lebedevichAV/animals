@@ -3,6 +3,8 @@
 @import "fonts.scss";
 @import "vars.scss";
 @import "global.scss";
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.css";
 
 .logo {
   flex: 0 0 auto;
@@ -140,4 +142,41 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.slider {
+  width: 100%;
+  max-width: 1322px;
+  margin: 11.25rem auto 5rem;
+  > .slick-list {
+    z-index: 0;
+  }
+  > .slick-arrow {
+    width: 3.875rem;
+    height: 3.875rem;
+    background-image: $brand-gradient;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  > .slick-arrow::before {
+    font-size: 0;
+    width: 3.875rem;
+    height: 3.875rem;
+    background-image: $brand-gradient;
+    border-radius: 50%;
+  }
+  > .slick-prev::before {
+    content: url("@assets/icons/arrow-prev-icon.svg");
+  }
+  > .slick-next::before {
+    content: url("@assets/icons/arrow-next-icon.svg");
+  }
+}
+
+.slide__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  column-gap: 1.875rem;
+  row-gap: 1.25rem;
 }

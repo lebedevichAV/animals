@@ -1,12 +1,11 @@
 mixin slide(className, slide)
-    div(class=className)
-        -
-            let img = slide.img, 
-                title = slide.title, 
-                description = slide.description, 
-                icon = slide.icon;
-        img(src=require(`@assets/images/${img}`) alt="animal")
-        h6.title.title_6= title
-        p= description
-        a(href="/")
-            img(src=require(`@assets/icons/${icon}`) alt="icon")
+    .slide
+        .container
+            .slide__inner
+                each card in slide
+                    - let img = card.img, title = card.title, description = card.description, icon = card.icon;
+                    .card 
+                        img(src=require(`@assets/images/${img}`) alt="animal")
+                        title= title
+                        p= description
+                        img(src=require(`@assets/icons/${icon}`) alt="icon")
