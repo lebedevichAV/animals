@@ -180,3 +180,28 @@
   column-gap: 1.875rem;
   row-gap: 1.25rem;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: $brand-gradient border-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: $dark-color;
+  font-size: 15px;
+  &__photo {
+    border-radius: 5px 5px 0 0;
+  }
+  &__content {
+    flex: 1;
+    background-color: $light-color;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem 0.75rem 1rem;
+  }
+  &__link {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
