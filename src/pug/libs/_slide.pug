@@ -4,11 +4,4 @@ mixin slide(className, slide)
             .slide__inner
                 each card in slide
                     - let img = card.img, title = card.title, description = card.description, icon = card.icon;
-                    .card 
-                        img.card__photo(src=require(`@assets/images/${img}`) alt="animal")
-                        .card__content
-                            div
-                                h5.title.title_5= title
-                                p= description
-                            a.card__link(href="/")
-                                img(src=require(`@assets/icons/${icon}`) alt="icon")
+                    +card(img, title, description, icon)

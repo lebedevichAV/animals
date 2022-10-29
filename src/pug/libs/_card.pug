@@ -1,0 +1,9 @@
+mixin card(img, title, description, icon)
+    .card 
+        img.card__photo(src=require(`@assets/images/${img}`) alt="animal")
+        .card__content
+            div
+                h5.title.title_5= title
+                p= description
+            a.card__link(href="/")
+                img(src=require(`@assets/icons/${icon}`) alt="icon")

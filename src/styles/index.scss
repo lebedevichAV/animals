@@ -147,7 +147,7 @@
 .slider {
   width: 100%;
   max-width: 1322px;
-  margin: 11.25rem auto 5rem;
+  margin: calc(11.25rem -10px) auto calc(5rem - 10px);
   > .slick-list {
     z-index: 0;
   }
@@ -179,6 +179,7 @@
   grid-auto-rows: 1fr;
   column-gap: 1.875rem;
   row-gap: 1.25rem;
+  padding: 10px 0;
 }
 
 .card {
@@ -190,7 +191,13 @@
   color: $dark-color;
   font-size: 15px;
   &__photo {
+    width: 100%;
     border-radius: 5px 5px 0 0;
+    transition: all 0.3s ease-in;
+    &_chosen {
+      border-radius: 5px 5px 0 0;
+      transform: scale(1.027);
+    }
   }
   &__content {
     flex: 1;
@@ -199,6 +206,7 @@
     display: flex;
     align-items: center;
     padding: 0.5rem 0.75rem 0.75rem 1rem;
+    overflow: hidden;
   }
   &__link {
     display: inline-block;
