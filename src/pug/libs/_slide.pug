@@ -3,5 +3,4 @@ mixin slide(className, slide)
         .container
             .slide__inner
                 each card in slide
-                    - let img = card.img, title = card.title, description = card.description, icon = card.icon;
-                    +card(img, title, description, icon)
+                    +card(card.img, card.title, card.description, card.icon, card.location)
