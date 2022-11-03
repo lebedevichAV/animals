@@ -11,8 +11,10 @@ let cards = document.querySelectorAll(".card");
 for (let card of cards) {
   card.addEventListener("mouseover", function () {
     card.classList.toggle("card_chosen");
+    card.querySelector(".popup").classList.toggle("popup_active");
   });
   card.addEventListener("mouseout", function () {
     card.classList.toggle("card_chosen");
+    card.querySelector(".popup").classList.toggle("popup_active");
   });
 }

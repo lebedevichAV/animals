@@ -1,7 +1,6 @@
 mixin card(img, title, description, icon, location)
     .card 
         img.card__photo(src=require(`@assets/images/${img}`) alt="animal")
-        .substrate
         .popup
             p= title
             p= location

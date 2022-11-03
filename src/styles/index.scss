@@ -227,11 +227,11 @@
   border: 1px solid $dark-color;
   padding: 0.5rem 0.7rem 1rem;
   border-radius: 5px;
-  display: none;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: all 0.5s ease-in;
   &_active {
-    display: block;
+    visibility: visible;
     opacity: 1;
     .popup__button {
       background-color: $light-color;
