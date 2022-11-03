@@ -109,10 +109,8 @@
     url("@assets/images/flower-03.png") bottom right no-repeat;
   padding: 8.75rem 0 6.25rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  > * + * {
-    margin-top: 11.25em;
-  }
   @media (min-width: 630px) {
     background: url("@assets/images/flower-01-small.png") top right no-repeat,
       url("@assets/images/flower-02-small.png") bottom left no-repeat,
