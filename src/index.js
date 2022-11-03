@@ -6,13 +6,13 @@ $(document).ready(function () {
   $(".slider").slick();
 });
 
-let cardPhotos = document.querySelectorAll(".card__photo");
+let cards = document.querySelectorAll(".card");
 
-for (let cardPhoto of cardPhotos) {
-  cardPhoto.addEventListener("mouseover", function () {
-    cardPhoto.classList.toggle("card__photo_chosen");
+for (let card of cards) {
+  card.addEventListener("mouseover", function () {
+    card.classList.toggle("card_chosen");
   });
-  cardPhoto.addEventListener("mouseout", function () {
-    cardPhoto.classList.toggle("card__photo_chosen");
+  card.addEventListener("mouseout", function () {
+    card.classList.toggle("card_chosen");
   });
 }
