@@ -6,15 +6,19 @@ $(document).ready(function () {
   $(".slider").slick();
 });
 
-let cards = document.querySelectorAll(".card");
+let photos = document.querySelectorAll(".card__photo");
 
-for (let card of cards) {
-  card.addEventListener("mouseover", function () {
-    card.classList.toggle("card_chosen");
-    card.querySelector(".popup").classList.toggle("popup_active");
+for (let photo of photos) {
+  photo.addEventListener("mouseover", function () {
+    photo.parentElement.classList.toggle("card_chosen");
+    photo.parentElement
+      .querySelector(".popup")
+      .classList.toggle("popup_active");
   });
-  card.addEventListener("mouseout", function () {
-    card.classList.toggle("card_chosen");
-    card.querySelector(".popup").classList.toggle("popup_active");
+  photo.addEventListener("mouseout", function () {
+    photo.parentElement.classList.toggle("card_chosen");
+    photo.parentElement
+      .querySelector(".popup")
+      .classList.toggle("popup_active");
   });
 }
