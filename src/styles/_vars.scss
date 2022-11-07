@@ -10,6 +10,7 @@ $frosted-glass-white: hsla(240, 100%, 100%, 0.52);
 $green: hsl(89, 100%, 29%);
 $red: hsl(0, 83%, 45%);
 $orange: hsl(29, 93%, 46%);
+$orange-alter: hsl(32, 99%, 54%);
 $yellow: hsl(55, 100%, 59%);
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
@@ -76,3 +77,7 @@ $light-color: $white;
 $brand-gradient: $bright-orange-gradient;
 $primary-gradient: $orange-gradient;
 $secondary-gradient: $pink-gradient;
+
+//Local project variables:
+$feeding-title-color: $orange-alter;
+$feeding-link-color: $orange-alter;
