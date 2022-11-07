@@ -39,5 +39,36 @@ include pug/_head
         .feeding__inner
           h2 Pick and feed a friend
           p We know the animals bring you joy, and in these extraordinary times, we&#96;re glad.
+          p
+            |During a time when the COVID-19 epidemic is touching all of our lives, we&#96;re proud and glad 
+            |that people around the world find joy in PetStory.
+          p 
+            |Even though the zoo has reopened, we need you now more than ever to help us deal with these 
+            |problems. Please consider a gift to our 
+            a(href="/") Emergency Support Fund
+            |.
+          .schema
+            h3 How it works
+            .schema__content
+              ul.schema__list
+                -
+                  let images = [
+                    {
+                      img: "pay-icon.svg", 
+                      text: "Pay with card"
+                    }, 
+                    {
+                      img: "payment-zoo-icon.svg", 
+                      text: "Payment goes to the zoo"
+                    },
+                    {
+                      img: "feed-animal-icon.svg", 
+                      text: "Your favourite animal gets delicious dish"
+                    }
+                  ];
+                each img in images
+                  li.shema__item
+                    +img-module(img.img, img.text)
+          button.button Feed a friend now
   footer.footer
 
