@@ -26,6 +26,8 @@ for (let photo of photos) {
 
 const swiper = new Swiper(".swiper", {
   modules: [Scrollbar],
+  slidesPerView: 4,
+  spaceBetween: 30,
   scrollbar: {
     el: ".swiper-scrollbar",
   },

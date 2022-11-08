@@ -1,0 +1,15 @@
+mixin swiper-slide(obj)
+    .swiper-slide
+        .swiper-slide__inner
+            .user
+                if obj.img
+                    img.user__img(src=require(`@assets/images/${obj.img}`) alt="user")
+                    p.user__name= obj.name
+                    span.user__location= obj.local
+                    span.user__visit= obj.lastVisit
+                else
+                    img.user__img(src=require("@assets/icons/user-icon.svg") alt="user")
+                    p.user__name= obj.name
+                    span.user__location= obj.local
+                    span.user__visit= obj.lastVisit
+            .rewiew= obj.rewiew
