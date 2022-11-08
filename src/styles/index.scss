@@ -5,6 +5,7 @@
 @import "global.scss";
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.css";
+@import "~swiper/swiper-bundle.min.css";
 
 .logo {
   flex: 0 0 auto;
@@ -348,5 +349,11 @@
   }
   &__text {
     margin-top: 30px;
+  }
+}
+
+.testimonials {
+  &__inner {
+    margin: 8.75rem 0 11.25rem;
   }
 }

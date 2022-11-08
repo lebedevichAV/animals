@@ -70,5 +70,46 @@ include pug/_head
                 li.schema__item
                   +img-module(img.img, img.text)
           button.button Feed a friend now
+    section.testimonials
+      .container
+        .testimonials__inner
+          h3.title.title_3 Testimonials
+          .swiper.testimonials-slider
+            .swiper-wrapper
+              -
+                let rewiews = [
+                  {
+                    img: null,
+                    name: "Michael John",
+                    local: "Austria",
+                    lastVisit: "today",
+                    rewiew: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
+                  },
+                  {
+                    img: "user-1.jpg",
+                    name: "Oskar Samborsky",
+                    local: "Austria",
+                    lastVisit: "Yesterday",
+                    rewiew: "Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
+                  },
+                  {
+                    img: "user-2.jpg",
+                    name: "Fredericka Michelin",
+                    local: "Austria",
+                    lastVisit: "Yesterday",
+                    rewiew: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
+                  },
+                  {
+                    img: "user-3.jpg",
+                    name: "Mila Riksha",
+                    local: "Austria",
+                    lastVisit: "Yesterday",
+                    rewiew: "My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
+                  },
+                ]
+              each rewiew in rewiews
+                .swiper-slide= rewiew.name
+            .swiper-scrollbar
+          button.button.button_alter Leave feedback
   footer.footer
 

@@ -1,5 +1,6 @@
 import * as $ from "jquery";
 import "slick-carousel";
+import Swiper, { Scrollbar } from "swiper";
 import "@/styles";
 
 $(document).ready(function () {
@@ -22,3 +23,10 @@ for (let photo of photos) {
       .classList.toggle("popup_active");
   });
 }
+
+const swiper = new Swiper(".swiper", {
+  modules: [Scrollbar],
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
