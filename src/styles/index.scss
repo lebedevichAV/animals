@@ -359,7 +359,8 @@
     background: url("@assets/images/flower-04-small.png") bottom right no-repeat;
   }
   @media (min-width: 970px) {
-    background: url("@assets/images/flower-04-medium.png") bottom right no-repeat;
+    background: url("@assets/images/flower-04-medium.png") bottom right
+      no-repeat;
   }
   @media (min-width: 1690px) {
     background: url("@assets/images/flower-04-big.png") bottom right no-repeat;
@@ -425,4 +426,9 @@
       }
     }
   }
+}
+
+.footer {
+  background-color: $footer-background;
+  padding: 2.625rem 0 3.125rem;
 }

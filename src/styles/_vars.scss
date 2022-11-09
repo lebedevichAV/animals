@@ -13,6 +13,7 @@ $orange: hsl(29, 93%, 46%);
 $orange-alter: hsl(32, 99%, 54%);
 $yellow: hsl(55, 100%, 59%);
 $black: hsl(0, 0%, 0%);
+$dark-black: hsl(240, 11%, 7%);
 $white: hsl(0, 0%, 100%);
 
 //Gradient variables:
@@ -82,3 +83,4 @@ $secondary-gradient: $pink-gradient;
 $feeding-title-color: $orange-alter;
 $feeding-link-color: $orange-alter;
 $swiper-scrollbar-drag: $orange-alter;
+$footer-background: $dark-black;
