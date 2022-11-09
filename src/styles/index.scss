@@ -353,8 +353,16 @@
 }
 
 .testimonials {
-  &__inner {
-    margin: 8.75rem 0 11.25rem;
+  background-image: url("@assets/images/flower-04.png") bottom right no-repeat;
+  padding: 8.75rem 0 11.25rem;
+  @media (min-width: 630px) {
+    background: url("@assets/images/flower-04-small.png") bottom right no-repeat;
+  }
+  @media (min-width: 970px) {
+    background: url("@assets/images/flower-04-medium.png") bottom right no-repeat;
+  }
+  @media (min-width: 1690px) {
+    background: url("@assets/images/flower-04-big.png") bottom right no-repeat;
   }
 }
 
