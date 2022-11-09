@@ -358,6 +358,17 @@
   }
 }
 
+.testimonials-slider {
+  margin: 1.125rem 0 1.9375rem;
+  .swiper-scrollbar {
+    height: 0.5rem;
+    background-color: $lighter-main-gray;
+  }
+  .swiper-scrollbar-drag {
+    background-color: $swiper-scrollbar-drag;
+  }
+}
+
 .swiper-slide {
   max-width: 263px;
   margin: 1.635rem 0;
