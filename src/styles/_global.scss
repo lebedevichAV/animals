@@ -66,13 +66,14 @@ a {
 }
 
 .button {
-  width: fit-content;
+  max-width: 298px;
+  width: 100%;
   font-weight: 500;
   line-height: 1.4;
   color: $light-color;
   text-transform: uppercase;
   text-align: center;
-  padding: 1em 6.0625em;
+  padding: 1em 0;
   border-radius: 1.5625em;
   border: none;
   outline: none;
