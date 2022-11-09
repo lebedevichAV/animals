@@ -357,3 +357,23 @@
     margin: 8.75rem 0 11.25rem;
   }
 }
+
+.swiper-slide {
+  margin: 1.635rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: $darker-main-gray;
+  background: $secondary-gradient border-box;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  &__inner {
+    background-color: $lighter-main-gray;
+    border-radius: 20px;
+    padding: 1em 1rem;
+  }
+  &__rewiew {
+    max-height: 309px;
+    overflow: hidden;
+  }
+}
