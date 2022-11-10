@@ -1,9 +1,9 @@
 mixin nav(obj, page)
-    nav.nav
-        ul.nav__list
-            each elem in obj
-                li
-                    if elem.link === page
-                        a(class="nav__link_active" href=elem.src)= elem.link
-                    else
-                        a(href=elem.src)= elem.link
+  nav.nav
+      ul.nav__list
+          each elem in obj
+              li
+                  if elem.link === page
+                      a(class="nav__link_active" href=elem.src)= elem.link
+                  else
+                      a(href=elem.src)= elem.link
