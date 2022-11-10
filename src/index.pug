@@ -172,7 +172,7 @@ include pug/_head
   footer.footer
     .container
       .footer__inner
-        .section
+        .section.section_1
           p.logo PetStory Online
             a(href="/")
               +picture("logo__img", "logo", "png")
@@ -204,7 +204,7 @@ include pug/_head
           each network in networks
             li.social__item
               a.social__link(href= network.src)= network.network
-        .section
+        .section.section_2
           -
             links = [
               {
@@ -225,8 +225,9 @@ include pug/_head
               },
             ];
           +nav(links, "About")
-        .section
-          form(class="form")
+        .section.section_3
+          form.form
+            h4.title.title_4 Subscribe to our news
             input#form__email(class="form__email" type="email" name="form__email")
             button Submit
           .site-info
