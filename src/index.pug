@@ -154,5 +154,32 @@ include pug/_head
             a(href="/")
               +picture("logo__img", "logo", "png")
           button.button.button_alter Donate for volunteers
+          ul.social
+          -
+            let networks = [
+              {
+                network: "Facebook",
+                src: "www.facebook.com",
+                icon: "facebook-icon.svg",
+              },
+              {
+                network: "Twitter",
+                src: "www.twitter.com",
+                icon: "twitter-icon.svg",
+              },
+              {
+                network: "Instagram",
+                src: "www.instagram.com",
+                icon: "instagram-icon.svg",
+              },
+              {
+                network: "YouTube",
+                src: "www.youtube.com",
+                icon: "youtube-icon.svg",
+              },
+            ];
+          each network in networks
+            li.social__item
+              a.social__link(href= network.src)= network.network
         .section
         .section
