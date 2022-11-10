@@ -1,0 +1,7 @@
+mixin social-list(networks)
+    ul.social
+        each network in networks
+            li.social__item
+                a.social__link(href= network.src)
+                    img.social__icon(src=require(`@assets/icons/${network.icon}`))
+                    = network.network

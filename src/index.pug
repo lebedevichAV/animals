@@ -200,10 +200,7 @@ include pug/_head
                 icon: "youtube-icon.svg",
               },
             ]; 
-          ul.social
-            each network in networks
-              li.social__item
-                a.social__link(href= network.src)= network.network
+          +social-list(networks)
         .section.section_2
           -
             links = [
