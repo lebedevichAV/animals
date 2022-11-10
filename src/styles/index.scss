@@ -22,15 +22,10 @@
   font-weight: 500;
   line-height: 140%;
   &__list {
+    width: 100%;
     display: flex;
     > li + li {
       margin-left: 3.625em;
-    }
-    :last-child {
-      margin-left: auto;
-      > a::after {
-        content: " \00A9";
-      }
     }
   }
   &__link_active {
@@ -46,6 +41,13 @@
       -webkit-text-fill-color: transparent;
       color: $brand-color;
     }
+  }
+}
+.copy {
+  margin-left: auto;
+  font-weight: 500;
+  &::after {
+    content: " \00A9";
   }
 }
 

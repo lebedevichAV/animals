@@ -22,10 +22,6 @@ include pug/libs/_libs
       link: "Contact us",
       src: "/contacts"
     },
-    {
-      link: "Designed by",
-      src: "https://www.figma.com/"
-    }
   ];
 
 doctype html
@@ -38,6 +34,7 @@ include pug/_head
           a(href="/")
             +picture("logo__img", "logo", "png")
         +nav(links, "About")
+        a.copy(href="https://www.figma.com/") Designed by
   main.main
     section.lending
       .container
@@ -208,4 +205,24 @@ include pug/_head
             li.social__item
               a.social__link(href= network.src)= network.network
         .section
+          -
+            links = [
+              {
+                link: "About",
+                src: "/"
+              },
+              {
+                link: "Map",
+                src: "/map"
+              },
+              {
+                link: "Zoos",
+                src: "/zoos"
+              },
+              {
+                link: "Contact us",
+                src: "/contacts"
+              },
+            ];
+          +nav(links, "About")
         .section
