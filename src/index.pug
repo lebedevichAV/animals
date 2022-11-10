@@ -1,6 +1,32 @@
 include pug/libs/_libs
 
-- let links={"About": "/","Map": "/map","Zoos": "/zoos","Donate": "/donate","Contact us": "/contacts","Designed by": "https://www.figma.com/"};
+-
+  let links=[
+    {
+      link: "About",
+      src: "/"
+    },
+    {
+      link: "Map",
+      src: "/map"
+    },
+    {
+      link: "Zoos",
+      src: "/zoos"
+    },
+    {
+      link: "Donate",
+      src: "/donate"
+    },
+    {
+      link: "Contact us",
+      src: "/contacts"
+    },
+    {
+      link: "Designed by",
+      src: "https://www.figma.com/"
+    }
+  ];
 
 doctype html
 include pug/_head

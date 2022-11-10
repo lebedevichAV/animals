@@ -1,6 +1,9 @@
-mixin nav(array, page)
+mixin nav(obj, page)
     nav.nav
         ul.nav__list
-            each val, key in array
+            each elem in obj
                 li
-                    a(class= key===page && ["nav__link_active"] href=val)= key
+                    if elem.link === page
+                        a(class="nav__link_active" href=elem.src)= elem.link
+                    else
+                        a(href=elem.src)= elem.link
