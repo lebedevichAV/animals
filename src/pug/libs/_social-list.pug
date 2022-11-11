@@ -3,4 +3,11 @@ mixin social-list(networks)
         each network in networks
             li.social__item
                 a.social__link(href= network.src)
-                    = network.network
+                    if network.network === "facebook"
+                        span.social__icon-wrapper
+                            i(class=`social__icon fa-brands fa-${network.network}-f`)
+                        = network.name
+                    else
+                        span.social__icon-wrapper
+                            i(class=`social__icon fa-brands fa-${network.network}`)
+                        = network.name

@@ -457,22 +457,12 @@
 }
 
 .social {
-  &__icon {
+  &__icon-wrapper {
     display: inline-block;
-    margin-right: 0.75rem;
+    width: 26px;
+    height: 26px;
+    background-color: $main-gray;
     vertical-align: middle;
-    &_facebook {
-      background-image: url("@assets/icons/facebook-icon.svg");
-    }
-    &_twitter {
-      background-image: url("@assets/icons/twitter-icon.svg");
-    }
-    &_instagram {
-      background-image: url("@assets/icons/instagram-icon.svg");
-    }
-    &_youTube {
-      background-image: url("@assets/icons/youtube-icon.svg");
-    }
   }
   > li + li {
     margin-top: 10px;
@@ -483,9 +473,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: $active-color;
       color: $active-color;
-      .social__icon {
-        fill: green;
-      }
     }
   }
 }
