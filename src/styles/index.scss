@@ -515,4 +515,8 @@
 .site-info {
   width: 70%;
   margin-left: auto;
+  color: $light-color;
+  &__link {
+    font-weight: 100;
+  }
 }
