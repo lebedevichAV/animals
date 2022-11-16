@@ -458,21 +458,37 @@
 
 .social {
   &__icon-wrapper {
-    display: inline-block;
+    display: block;
     width: 26px;
     height: 26px;
+    margin-right: 12px;
     background-color: $main-gray;
+    border-radius: 50%;
     vertical-align: middle;
+  }
+  &__icon {
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 4px;
   }
   > li + li {
     margin-top: 10px;
   }
   &__link {
-    &:hover {
+    display: flex;
+    align-items: center;
+    &_active {
       background: $brand-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: $active-color;
       color: $active-color;
+      &:hover {
+        background: $brand-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: $active-color;
+        color: $active-color;
+      }
     }
   }
 }

@@ -32,3 +32,14 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+let network_list = document.querySelectorAll(".social__link");
+
+for (let network_link of network_list) {
+  network_link.addEventListener("mouseover", function () {
+    network_link.classList.toggle("social__link_active");
+  });
+  network_link.addEventListener("mouseout", function () {
+    network_link.classList.toggle("social__link_active");
+  });
+}
