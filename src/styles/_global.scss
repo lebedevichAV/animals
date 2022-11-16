@@ -92,6 +92,15 @@ a {
   &_disabled {
     background: linear-gradient($darker-main-gray 0%, $darker-main-gray 100%);
   }
+  &_submit {
+    max-width: 129px;
+    width: 100%;
+    padding: 0.625em 0;
+    background: $lighter-main-gray;
+    border: 1px solid $the-darkest-gray;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
 }
 
 .title {
